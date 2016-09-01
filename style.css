@@ -1,1 +1,53 @@
 @import url("./reset.css");
+
+/* BRAND COLORS ============= */
+.red { color:#ef7056; }
+.green { color:#88e1ab; }
+.blue { color:#2898fb; }
+.yellow { color:#f2d631; }
+.pink { color:#f5b7cd; }
+.light { color:#f2f2f2; }
+.darkgrey { color:#4d4d4d; }
+
+/* LAYOUT ============= */
+body {
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bigwrap {
+  padding: 30px;
+  transition: 0.3s ease-out;
+}
+
+/* TYPOGRAPHY ============= */
+.leck {font-family: 'Leckerli One', cursive;}
+.oleo {font-family: 'Oleo Script Swash Caps', cursive;}
+.raleway {font-family: 'Raleway', sans-serif;}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.8em;}
+h5 {font-size: 1.6em;}
+h6 {font-size: 1.3em;}
+p {font-size: 1.2em;}
+
+/* HEADER ============= */
+nav {
+  font-family: 'Raleway', sans-serif;
+}
+.title {
+  font-size: 4em;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: #88e1ab;
+}
+
+/* EVENTS ============= */
+
+/* ABOUT ============= */
+
+/* APPROACH ============= */
+
+/* INVOLVE ============= */
