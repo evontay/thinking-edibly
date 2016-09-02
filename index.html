@@ -17,8 +17,32 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
   <nav>
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#involve">Involve</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <nav>
     <ul>
       <li>Events</li>
       <li>About</li>
@@ -26,7 +50,7 @@
       <li>Get Involved</li>
       <li class="cta">Join Next Session</li>
     </ul>
-  </nav>
+  </nav> -->
 
   <div class="container" id="header">
     <div class="row">
@@ -51,14 +75,25 @@
         <a id="show-3">Session 03</a>
 
         <div id="session1">
-          <h2>Session 01</h2>
-          <h6>3 Sep 2016</h6>
-          <h3>Food for All: Health and Society</h3>
-          <h6>4 - 5.30pm</h6>
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Session 01</h2>
+              <h6>3 Sep 2016</h6>
+              <h3>Food for All: Health and Society</h3>
+              <h6>4 - 5.30pm</h6>
 
-          <p>Food is plentiful in Singapore, but how about accessibility to nutritious, affordable food? Does everyone have equal access to such food, and if not, how could we begin to address that? Are there sources of health that we are overlooking in our focus on medicines? We start from where we are to identify areas of concern in the food system, before looking at the actors in the food system.
+              <btn class="cta">Sign Up</btn>
+            </div>
 
-          <h6>Keywords: health, food justice, food access, affordability</h6>
+            <div class="col-md-6">
+              <p>Food is plentiful in Singapore, but how about accessibility to nutritious, affordable food? Does everyone have equal access to such food, and if not, how could we begin to address that? Are there sources of health that we are overlooking in our focus on medicines? We start from where we are to identify areas of concern in the food system, before looking at the actors in the food system.
+
+              <h6>Keywords: health, food justice, food access, affordability</h6>
+            </div>
+          </div>
+
+
+
 
           <h6>Possible Subtopics:</h6>
           <ul>
@@ -80,7 +115,7 @@
 
           <p>*Participants are invited to start scheduling activities together via FB group.</p>
 
-          <a class="cta">Sign Up</a>
+
 
         </div><!-- #session1 -->
 
@@ -203,18 +238,29 @@
       <div class="container">
         <h1>How to help</h1>
         <p>Know someone who can help? Tell us. We are looking out for funding and talent to join the team:
-        <ul>
-          <li>
+        <div class="row">
+          <div class="col-md-4">
             <h3>Facilitators</h3>
             <p>Some experience is preferable (reimbursed for time)
-          </li>
-          <li>
-            <h3>Data collation and analysis </h3>
+          </div>
+          <div class="col-md-4">
+            <h3>Data collation &amp; analysis </h3>
             <p>Coders across all sessions (commit to 2 out of 3 sessions, and a compulsory training session 2nd wk Sept) (reimbursed for time)
-          </li>
-          <li>
+          </div>
+          <div class="col-md-4">
             <h3>Website and FB:</h3>
             <p>Ensures content for website and FB (for this programme) is proofed and updated fortnightly (reimbursed for time)
+          </div>
+        </div>
+        <ul>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+          <li>
+
           </li>
         </ul>
       </div><!-- container -->
@@ -226,11 +272,10 @@
       <div class="row">
         <div class="col-md-4">
           <ul>
-            <li>Events</li>
-            <li>About</li>
-            <li>Our Approach</li>
-            <li>Get Involved</li>
-            <li class="cta">Join Next Session</li>
+            <a href="#events"><li>Events</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#approach"><li>Our Approach</li></a>
+            <a href="#involve"><li>Get Involved</li></a>
           </ul>
         </div>
         <div class="col-md-4">
