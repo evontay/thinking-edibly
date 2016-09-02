@@ -32,22 +32,125 @@ h3 {font-size: 2em;}
 h4 {font-size: 1.8em;}
 h5 {font-size: 1.6em;}
 h6 {font-size: 1.3em;}
-p {font-size: 1.2em;}
+p {
+  font-size: 1.1em;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+li {line-height: 1.8;}
 
 /* HEADER ============= */
 nav {
-  font-family: 'Raleway', sans-serif;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #88e1ab;
+  width: 100%;
+  z-index: 99;
+  text-align: right;
 }
+
+nav .cta {
+  background-color:#4d4d4d;
+  padding: 10px 15px;;
+  color: #f2f2f2;
+  border-radius: 3px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+nav ul li{
+  font-family: 'Raleway', sans-serif;
+  display: inline;
+  padding-left: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+#header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#header h4 {
+  margin-bottom: 20px;
+}
+
+#header p{
+  line-height: 1.4;
+}
+
 .title {
-  font-size: 4em;
+  font-size: 6em;
   font-family: 'Oleo Script Swash Caps', cursive;
-  color: #88e1ab;
+  color: #ef7056;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.tagline {
+  margin-bottom: 50px;
+}
+.byline {
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 /* EVENTS ============= */
+#events {
+  background-color: #88e1ab;
+  padding: 50px;
+}
+
+#show-1, #show-2, #show-3 {
+  padding: 15px;
+}
+#session1 {display: block;}
+
+#session2 {display: block;}
+
+#session3 {display: block;}
+
+#events ul {
+  margin-bottom: 50px;
+}
+
+.cta {
+  background-color:#4d4d4d;
+  padding: 10px 15px;;
+  color: #f2f2f2;
+  border-radius: 3px;
+  margin: 50px 0;
+  cursor: pointer;
+}
 
 /* ABOUT ============= */
+#about {
+  background-color: #f2d631;
+  padding: 50px;
+}
 
 /* APPROACH ============= */
+#approach {
+  background-color: #2898fb;
+  padding: 50px;
+  color: #f2f2f2;
+}
 
 /* INVOLVE ============= */
+#involve {
+  background-color: #f5b7cd;
+  padding: 50px;
+}
+
+/* FOOTER ============= */
+footer {
+  background-color: #4d4d4d;
+  padding: 50px 0;
+}
+
+footer ul li {
+  line-height: 1.8;
+  color: #f2f2f2;
+}
