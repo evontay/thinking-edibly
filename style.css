@@ -5,20 +5,14 @@
 }
 
 /* BRAND COLORS ============= */
-/*.red { color:#ef7056; }
+.red { color:#ef7056; }
 .green { color:#88e1ab; }
 .blue { color:#2898fb; }
 .yellow { color:#f2d631; }
 .pink { color:#f5b7cd; }
 .light { color:#f2f2f2; }
-.darkgrey { color:#4d4d4d; }*/
+.darkgrey { color:#4d4d4d; }
 
-body.red {background-color: #ef7056;}
-body.green {background-color: #88e1ab;}
-body.blue {background-color: #2898fb;}
-body.yellow {background-color: #f2d631;}
-body.pink {background-color: #f5b7cd;}
-body.darkgrey {background-color: #4d4d4d;}
 
 /* LAYOUT ============= */
 body {
@@ -171,14 +165,14 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
   margin: 20px 0;
   display: flex;
   flex-direction: row;
-  border-left: 4px solid #fff;
-  color: #fff;
+  border-left: 4px solid #84f7b2;
+  /*color: #fff;*/
   cursor: pointer;
 }
 
 #show-1:hover, #show-1:active, #show-2:hover, #show-2:active, #show-3:hover, #show-2:active{
   background-color: #84f7b2;
-  color: #4d4d4d;
+  color: #4d4d4d !important;
 }
 
 .active {
@@ -192,6 +186,7 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.9em;
+  color: #fff;
 }
 
 .big {
@@ -205,12 +200,15 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
 }
 
 .show-right h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.1;
+  font-weight: bold;
+  text-transform: uppercase;
+  /*letter-spacing: 1px;*/
 }
 
 .date {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #cbf7dd;
   padding-top: 10px;
   margin-top: 10px;
 }
@@ -301,9 +299,12 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
 footer {
   background-color: #4d4d4d;
   padding: 50px 0;
+  color: #f2f2f2
 }
 
 footer ul li {
   line-height: 1.8;
   color: #f2f2f2;
 }
+
+/* MAILING LIST ============= */
