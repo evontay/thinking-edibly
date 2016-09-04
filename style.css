@@ -297,6 +297,14 @@ nav ul li{
   padding: 50px;
 }
 
+.pullquote1 {
+  border-left: 4px solid #4d4d4d;
+  font-style: italic;
+  font-size: 2.5em;
+  line-height: 1.5 !important;
+  padding: 30px;
+}
+
 /* APPROACH ============= */
 #approach {
   background-color: #2898fb;
@@ -308,6 +316,7 @@ nav ul li{
 #involve {
   background-color: #ef7056;
   padding: 50px;
+  color: #f2f2f2;
 }
 
 /* FOOTER ============= */
