@@ -17,30 +17,24 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target="#nav" data-offset="50">
 
-  <nav>
-    <div class="container-fluid">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">WebSiteName</a>
-      </div>
-      <div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#events">Events</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#approach">Approach</a></li>
-            <li><a href="#involve">Involve</a></li>
-          </ul>
-        </div>
-      </div>
+  <!-- responsive menu -->
+  <input type="checkbox" id="sidebartoggler" name="" value=""></input>
+    <div class="page-wrap">
+      <!-- mobile nav -->
+      <label for="sidebartoggler" class="menu-tog">
+        <h5>☰</h5>
+      </label>
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#approach">Our Approach</a></li>
+        <li><a href="#involve">Get Involved</a></li>
+      </ul>
     </div>
-  </nav>
 
   <!-- <nav>
     <ul>
@@ -67,168 +61,216 @@
 
     <div id="events">
       <div class="container">
-        <h1>Events</h1>
-        <p>Each session of the Food Discussions revolves around a particular topic relating food to who we are. Our aim here is to briefly glance over the range of ways food, human identity, health and sense of place are related. Obviously, each topic includes many subtopics and it would be impossible to cover them in equal depth. What these sessions aim to do, though, is to identify areas that participants (you) think are important to be explored more fully, list them out, and use them to organise our 2nd round of our discussions (from February 2017).
-
-        <a id="show-1">Session 01</a>
-        <a id="show-2">Session 02</a>
-        <a id="show-3">Session 03</a>
-
-        <div id="session1">
-          <div class="row">
-            <div class="col-md-6">
-              <h2>Session 01</h2>
-              <h6>3 Sep 2016</h6>
-              <h3>Food for All: Health and Society</h3>
-              <h6>4 - 5.30pm</h6>
-
-              <btn class="cta">Sign Up</btn>
+        <h1 class="oleo">Events</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Each session of the Food Discussions revolves around a particular topic relating food to who we are. Our aim here is to briefly glance over the range of ways food, human identity, health and sense of place are related. Obviously, each topic includes many subtopics and it would be impossible to cover them in equal depth. What these sessions aim to do, though, is to identify areas that participants (you) think are important to be explored more fully, list them out, and use them to organise our 2nd round of our discussions (from February 2017).
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+          <!-- EVENT MENU ============ -->
+          <div class="col-md-4">
+            <div id="show-1" class="active">
+              <div class="show-left">
+                Session <span class="big">01</span>
+              </div>
+              <div class="show-right">
+                <h2>Food for All:<br> Health and Society</h2>
+                <h6 class="date">3 Sep 2016</h6>
+              </div>
             </div>
-
-            <div class="col-md-6">
-              <p>Food is plentiful in Singapore, but how about accessibility to nutritious, affordable food? Does everyone have equal access to such food, and if not, how could we begin to address that? Are there sources of health that we are overlooking in our focus on medicines? We start from where we are to identify areas of concern in the food system, before looking at the actors in the food system.
-
-              <h6>Keywords: health, food justice, food access, affordability</h6>
+            <div id="show-2">
+              <div class="show-left">
+                Session <span class="big">02</span>
+              </div>
+              <div class="show-right">
+                <h2>Local Recipes<br> Local Tastes</h2>
+                <h6 class="date">17 Sep 2016</h6>
+              </div>
+            </div>
+            <div id="show-3">
+              <div class="show-left">
+                Session <span class="big">03</span>
+              </div>
+              <div class="show-right">
+                <h2>Eating Local</h2>
+                <h6 class="date">1 Oct 2016</h6>
+              </div>
             </div>
           </div>
+          <!-- END /EVENT MENU ============ -->
+
+          <!-- EVENT DETAILS =============== -->
+          <div class="col-md-8">
+            <div id="session1">
+              <h6>Session 01</h6>
+              <h3>Food for All: Health and Society</h3>
+              <ul>
+                <li class="e-details">Date: 3 September 2016</li>
+                <li class="e-details">Time: 4pm - 5.30pm</li>
+                <li class="e-details">Venue: TBC</li>
+              </ul>
+
+              <p>Food is plentiful in Singapore, but how about accessibility to nutritious, affordable food? Does everyone have equal access to such food, and if not, how could we begin to address that? Are there sources of health that we are overlooking in our focus on medicines? We start from where we are to identify areas of concern in the food system, before looking at the actors in the food system.
 
 
 
+              <p class="keywords">Keywords: <span>health</span> <span>food justice</span> <span>food access</span> <span>affordability</span></p>
 
-          <h6>Possible Subtopics:</h6>
-          <ul>
-            <li>Hidden hunger</li>
-            <li>Food as medicine</li>
-            <li>What do low income, elderly residents eat?</li>
-            <li>Food in hospitals</li>
-            <li>Chronic illness and diets</li>
-          </ul>
+              <!-- <h6>Possible Subtopics:</h6>
+              <ul>
+                <li>Hidden hunger</li>
+                <li>Food as medicine</li>
+                <li>What do low income, elderly residents eat?</li>
+                <li>Food in hospitals</li>
+                <li>Chronic illness and diets</li>
+              </ul>
 
-          <h6>Session Process:</h6>
-          <ul>
-            <li>Brainstorming</li>
-            <li>Discussion of gaps</li>
-            <li>Identifying focus areas</li>
-            <li>Concrete examples</li>
-            <li>Possible links</li>
-          </ul>
+              <h6>Session Process:</h6>
+              <ul>
+                <li>Brainstorming</li>
+                <li>Discussion of gaps</li>
+                <li>Identifying focus areas</li>
+                <li>Concrete examples</li>
+                <li>Possible links</li>
+              </ul>
+              <p>*Participants are invited to start scheduling activities together via FB group.</p>
+            -->
+              <btn class="cta">Sign Up</btn>
+            </div><!-- #session1 -->
 
-          <p>*Participants are invited to start scheduling activities together via FB group.</p>
+            <!-- EVENT DETAILS =============== -->
+            <div id="session2">
+              <h6>Session 02</h6>
+              <h3>Local recipes, Local tastes: Casting glamour</h3>
 
+              <ul>
+                <li class="e-details">Date: 17 September 2016</li>
+                <li class="e-details">Time: 4pm - 5.30pm</li>
+                <li class="e-details">Venue: TBC</li>
+              </ul>
 
+              <p>Good food is more than just tasty, it is indah. Drawing inspiration from INDAH, a mother-daughter team selling home-made, local kuehs, we look at the act of creating the perfect dish. Where does the enchantment of food begin? Is it in the ingredient used, in the smell from the stove and the roughness of charcoal, in the feel of moist dough beneath one’s fingers? Who is more enchanted, the one cooking, or the one eating?
 
-        </div><!-- #session1 -->
+              <p>In this session with tidbits and refreshments handmade by our speakers, we share stories about our fascination with food and food preparation, asking: how does glamour attach itself to food? Why are certain foods and lifestyles more glamourous than others? What is the spirit of food and food preparation we want generations after us to remember? And how can we pass this on?
 
-        <div id="session2">
-          <h2>Session 02</h2>
-          <h6>17 Sep 2016</h6>
-          <h3>Local recipes, Local tastes: Casting glamour</h3>
-          <h6>4 - 5.30pm</h6>
+              <h6>Keywords: recipes, traditions, stories, passing on the baton/kueh, knowledge sharing</h6>
 
-          <p>Good food is more than just tasty, it is indah. Drawing inspiration from INDAH, a mother-daughter team selling home-made, local kuehs, we look at the act of creating the perfect dish. Where does the enchantment of food begin? Is it in the ingredient used, in the smell from the stove and the roughness of charcoal, in the feel of moist dough beneath one’s fingers? Who is more enchanted, the one cooking, or the one eating?
+              <h6>Possible Subtopics:</h6>
+              <ul>
+                <li>Who’s cooking?</li>
+                <li>Receiving and reinterpreting glamour: Learning to cook - people & environment</li>
+                <li>Memories of food/gastronomic nostalgia: smells, tastes, designs</li>
+                <li>The places of glamour: Intimate parties - family, friends, & houses</li>
+              </ul>
 
-          <p>In this session with tidbits and refreshments handmade by our speakers, we share stories about our fascination with food and food preparation, asking: how does glamour attach itself to food? Why are certain foods and lifestyles more glamourous than others? What is the spirit of food and food preparation we want generations after us to remember? And how can we pass this on?
+              <h6>Session Process:</h6>
+              <ul>
+                <li>3 stories by invited speakers</li>
+                <li>We share food… and some thoughts: What are your favourite memories of food? How and where did they happen? What do you experience these memories?</li>
+                <li>How do we pass on our fascination with food?</li>
+                <li>Concrete examples</li>
+                <li>Possible opportunities with stakeholders, places, national issues (e.g. health concerns?)</li>
+              </ul>
 
-          <h6>Keywords: recipes, traditions, stories, passing on the baton/kueh, knowledge sharing</h6>
+              <h6>Come prepared</h6>
+              <ul>
+                <li>Prepare some thoughts on your favourite memories of food: how did you get these memories, and why do you rememeber them? What makes your remember them?</li>
+                <li>Of course, feel free to Bring Your Own special Food!</li>
+              </ul>
 
-          <h6>Possible Subtopics:</h6>
-          <ul>
-            <li>Who’s cooking?</li>
-            <li>Receiving and reinterpreting glamour: Learning to cook - people & environment</li>
-            <li>Memories of food/gastronomic nostalgia: smells, tastes, designs</li>
-            <li>The places of glamour: Intimate parties - family, friends, & houses</li>
-          </ul>
+              <a class="cta">Sign Up</a>
 
-          <h6>Session Process:</h6>
-          <ul>
-            <li>3 stories by invited speakers</li>
-            <li>We share food… and some thoughts: What are your favourite memories of food? How and where did they happen? What do you experience these memories?</li>
-            <li>How do we pass on our fascination with food?</li>
-            <li>Concrete examples</li>
-            <li>Possible opportunities with stakeholders, places, national issues (e.g. health concerns?)</li>
-          </ul>
+            </div><!-- #session2 -->
 
-          <h6>Come prepared</h6>
-          <ul>
-            <li>Prepare some thoughts on your favourite memories of food: how did you get these memories, and why do you rememeber them? What makes your remember them?</li>
-            <li>Of course, feel free to Bring Your Own special Food!</li>
-          </ul>
+            <div id="session3">
+              <h2>Session 03</h2>
+              <h6>1 Oct 2016</h6>
+              <h3>Eating Local</h3>
+              <h6>4 - 5.30pm</h6>
 
-          <a class="cta">Sign Up</a>
+              <p>We look at commercial and community-based food production to see what the future of eating local could be. Where would you go in Singapore to find the freshest food, grown locally? Has it become easier to find locally grown produces in recent years? What problems do local farmers face in commercial food production? Could we produce food for ourselves, to be shared with others in farms AND gardens?
 
-        </div><!-- #session2 -->
+              <h6>Keywords: local food production, farming, gardens, community-based, growing, food sovereignty, land tenure</h6>
 
-        <div id="session3">
-          <h2>Session 03</h2>
-          <h6>1 Oct 2016</h6>
-          <h3>Eating Local</h3>
-          <h6>4 - 5.30pm</h6>
+              <h6>Possible Subtopics:</h6>
+              <ul>
+                <li>What is grown locally?</li>
+                <li>Where are they grown/reared?</li>
+                <li>Where are they sold? How are they displayed/categorised in supermarkets?</li>
+                <li>What do gardeners do with their produce?</li>
+                <li>Could we one day grow our own food?</li>
+              </ul>
 
-          <p>We look at commercial and community-based food production to see what the future of eating local could be. Where would you go in Singapore to find the freshest food, grown locally? Has it become easier to find locally grown produces in recent years? What problems do local farmers face in commercial food production? Could we produce food for ourselves, to be shared with others in farms AND gardens?
+              <h6>Session Process:</h6>
+              <ul>
+                <li>Discussion / sharing: list out and map on a paper map</li>
+                <li>List out farm to supermarket/consumer supply chain</li>
+                <li>List out garden produce, informal supply chain (who is involved?)</li>
+                <li>Compare and find possible links, ways to support one another</li>
+              </ul>
 
-          <h6>Keywords: local food production, farming, gardens, community-based, growing, food sovereignty, land tenure</h6>
+              <a class="cta">Sign Up</a>
 
-          <h6>Possible Subtopics:</h6>
-          <ul>
-            <li>What is grown locally?</li>
-            <li>Where are they grown/reared?</li>
-            <li>Where are they sold? How are they displayed/categorised in supermarkets?</li>
-            <li>What do gardeners do with their produce?</li>
-            <li>Could we one day grow our own food?</li>
-          </ul>
-
-          <h6>Session Process:</h6>
-          <ul>
-            <li>Discussion / sharing: list out and map on a paper map</li>
-            <li>List out farm to supermarket/consumer supply chain</li>
-            <li>List out garden produce, informal supply chain (who is involved?)</li>
-            <li>Compare and find possible links, ways to support one another</li>
-          </ul>
-
-          <a class="cta">Sign Up</a>
-
-        </div><!-- #session3 -->
-      </div>
+            </div><!-- #session3 -->
+        </div><!-- col-md-8 -->
+      </div><!-- row -->
     </div><!-- #events -->
 
     <div id="about">
       <div class="container">
-        <h1>Why Discuss Food?</h1>
-        <p>Interest in farming is opening up. We urgently need to craft a community that understands the meaning of farming and nature, on a deeper level. We need to show that our vision of people farming sustainably for their community is possible.
+        <h1 class="oleo">Why Discuss Food?</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Interest in farming is opening up. We urgently need to craft a community that understands the meaning of farming and nature, on a deeper level. We need to show that our vision of people farming sustainably for their community is possible.
 
-        <p>There is some urgency here, a real need. Future land use and policy plans for urban planning are being made. By beginning our own process of fleshing out what we hope to see in the food system, we create the opportunity for a collective Food Vision to emerge.
+            <p>There is some urgency here, a real need. Future land use and policy plans for urban planning are being made. By beginning our own process of fleshing out what we hope to see in the food system, we create the opportunity for a collective Food Vision to emerge.
+          </div>
+          <div class="col-md-4">
+            <p>What could our local food system look like?
+          </div>
+        </div>
 
-        <p>What could our local food system look like?
-
-        <h1>Our End Goal</h1>
-        <p>Food is central to all our lives in Singapore. We are taught to eat the right way (from waiting for adults to start first to chopstick etiquette), and if we don’t learn to cook at home, we learn, from the hawker centres dotting our island, how much cockle our Char Kway Teow should have or how gingery our Teh Halia should be.
-
-        <p>But food is also central to the way our city is built, from the ventilation shafts running through a hawker centre and shopping mall and the people who maintain it at 3 in the morning, to the morning markets that open up bustling with heavy bargaining across the island, in Senoko Fish Port and heartland markets in Toa Payoh. From market, to cooking stove, to dish, to gut and excrement, food and us humans depend on each other to survive.
-
-        <p>We want to kickstart a process, stretching across months, that brings different voices into conversation over what a vision for food in Singapore could look like. Our end point comes when we have something we can all work towards. This may look like a document, a flurry of activities, or (and we hope) an organic community making, doing, sharing.
+        <h1 class="oleo pad-top">Our End Goal</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <p>Food is central to all our lives in Singapore. We are taught to eat the right way (from waiting for adults to start first to chopstick etiquette), and if we don’t learn to cook at home, we learn, from the hawker centres dotting our island, how much cockle our Char Kway Teow should have or how gingery our Teh Halia should be.
+          </div>
+          <div class="col-md-4">
+            <p>But food is also central to the way our city is built, from the ventilation shafts running through a hawker centre and shopping mall and the people who maintain it at 3 in the morning, to the morning markets that open up bustling with heavy bargaining across the island, in Senoko Fish Port and heartland markets in Toa Payoh. From market, to cooking stove, to dish, to gut and excrement, food and us humans depend on each other to survive.
+          </div>
+          <div class="col-md-4">
+            <p>We want to kickstart a process, stretching across months, that brings different voices into conversation over what a vision for food in Singapore could look like. Our end point comes when we have something we can all work towards. This may look like a document, a flurry of activities, or (and we hope) an organic community making, doing, sharing.
+          </div>
+        </div>
 
         <p>The objective is not to find the right answers, but to ask the right questions.
 
-        <h1>Stakeholders and Who it Benefits</h1>
-        <p>There are many people working in and with food. We want this process to speak to as many as possible - those who design the experience of food: chefs, planners, designers, architects - and those who consume (eat, gnaw, look at, wish for) the food.
+        <h1 class="oleo pad-top">Stakeholders and Who it Benefits</h1>
+        <div class="row">
+          <div class="col-md-6">
+          <p>There are many people working in and with food. We want this process to speak to as many as possible - those who design the experience of food: chefs, planners, designers, architects - and those who consume (eat, gnaw, look at, wish for) the food.
 
-        <p>It hopes to guide the work of policymakers, non-profits, enterprises and NGOs, and individuals and groups all over towards something collectively shared, owned, and created.
+          <p>It hopes to guide the work of policymakers, non-profits, enterprises and NGOs, and individuals and groups all over towards something collectively shared, owned, and created.
+          </div>
+        </div>
       </div><!-- container -->
     </div><!-- #about -->
 
     <div id="approach">
       <div class="container">
-        <h1>Our Approach</h1>
+        <h1 class="oleo pad-bottom">Our Approach</h1>
         <h6>In kickstarting this conversation, Foodscape Collective’s role is to facilitate the process and communicate the message shared by each voice in the process.</h6>
 
         <p>We work iteratively, starting small, adding time for reflection, and integrating modifications to each subsequent round. Thinking Edibly begins with 3 sessions of open food discussions on topical issues in food, interspersed with workshops, garden visits, farmers markets and installations. In November to December, it transitions into a free school for food, where we work with participants to create, from scratch, two months of ‘classes’, contributed by anyone, attended by anyone. Finally, in January we begin planning again for the 2nd round of food discussions, beginning in February.
 
 
-        <div>
-          Session 1 (Food for All: Health and Society)
-          Session 2 (Local recipes, Local tastes)
-          Session 3 (Eating Local)
-        </div>
+        <ul>
+          <a href="#session1"><li>Session 1 (Food for All: Health and Society)</li></a>
+          <a href="#session1"><li>Session 2 (Local recipes, Local tastes)</li></a>
+          <a href="#session1"><li>Session 3 (Eating Local)</li></a>
+        </ul>
 
         <p>Our discussions hope to address identity, (middle) class consciousness, an interest in food and growing, to aim for a conversation that opens up the discussion on food and agroecology, and to work towards forming connections around these. Lastly, they are inductive - based on the contributions of participants, we then look at how terms used in the larger international food discussion lend weight and nuance to these localised notions of food.
       </div><!-- container -->
@@ -236,7 +278,7 @@
 
     <div id="involve">
       <div class="container">
-        <h1>How to help</h1>
+        <h1 class="oleo">How to help</h1>
         <p>Know someone who can help? Tell us. We are looking out for funding and talent to join the team:
         <div class="row">
           <div class="col-md-4">
