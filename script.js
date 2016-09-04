@@ -13,15 +13,35 @@ $(function () {
   })
 })
 
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     if ($(document).scrollTop() > 200) {
-//       $('body').addClass('green')
-//     } else {
-//       $('body').removeClass('green')
-//     }
-//   })
-// })
+$(document).ready(function () {
+  $('#show-1').click(function () {
+    console.log('clicked')
+    $('#session1').removeClass('hidden')
+    $('#session2').addClass('hidden')
+    $('#session3').addClass('hidden')
+    $('#show-1').addClass('active')
+    $('#show-2').removeClass('active')
+    $('#show-3').removeClass('active')
+  })
+  $('#show-2').click(function () {
+    console.log('clicked')
+    $('#session1').addClass('hidden')
+    $('#session2').removeClass('hidden')
+    $('#session3').addClass('hidden')
+    $('#show-1').removeClass('active')
+    $('#show-2').addClass('active')
+    $('#show-3').removeClass('active')
+  })
+  $('#show-3').click(function () {
+    console.log('clicked')
+    $('#session1').addClass('hidden')
+    $('#session2').addClass('hidden')
+    $('#session3').removeClass('hidden')
+    $('#show-1').removeClass('active')
+    $('#show-2').removeClass('active')
+    $('#show-3').addClass('active')
+  })
+})
 
 // // For elements floating into place on scroll
 // $(document).ready(function () {
