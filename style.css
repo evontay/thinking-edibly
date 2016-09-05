@@ -86,7 +86,7 @@ a, a:hover, a:visited, a:active {text-decoration: none;}
   padding: 5px 10px;;
   color: #f2f2f2;
   border-radius: 3px;
-  margin-left: 20px;
+  margin: 0 20px;
   cursor: pointer;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -102,7 +102,7 @@ nav {
   position: fixed;
   top: 0;
   background-color: #f2f2f2;
-  border-bottom: 2px solid #88e1ab;
+  /*border-bottom: 2px solid #ef7056;*/
   width: 100%;
   z-index: 99;
   text-align: right;
@@ -129,24 +129,24 @@ nav ul li {
 
 nav ul a {
   text-decoration: none;
-  color: #6cd093;
+  color: #ef7056;
 }
 
 nav ul a:hover {
   text-decoration: none;
-  color: #88e1ab;
+  color: #f9856d;
 }
 
-nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
+/*nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
   text-decoration: none;
   color: #f2f2f2;
-}
+}*/
 
 
 #header {
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 #header h4 {
@@ -158,14 +158,14 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
   font-size: 6em;
   font-family: 'Oleo Script Swash Caps', cursive;
   color: #ef7056;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 .tagline {
   margin-bottom: 50px;
 }
 .byline {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -175,6 +175,14 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
 
 .byline p a:hover {
   color: #f99580;
+}
+
+.hero {
+  width: 100%;
+  background-image: url('img/header-hero.png');
+  background-repeat: repeat-x;
+  height: 500px;
+  background-position: right;
 }
 
 /* EVENTS ============= */
@@ -346,7 +354,7 @@ footer button {
 
 /* MAILING LIST ============= */
 .btn {
-  vertical-align:inherit; 
+  vertical-align:inherit;
 }
 .modal-header {
   border-bottom: none;
