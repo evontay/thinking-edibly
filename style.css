@@ -2,6 +2,9 @@
 
 * {
   box-sizing: border-box;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 /* BRAND COLORS ============= */
@@ -78,7 +81,22 @@ a, a:hover, a:visited, a:active {text-decoration: none;}
 
 
 /* HEADER ============= */
+.newsletter {
+  background-color:#4d4d4d;
+  padding: 5px 10px;;
+  color: #f2f2f2;
+  border-radius: 3px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
+.newsletter:hover {
+  background-color:#5d5d5d;
+  color: #f2f2f2;
+}
 
 nav {
   position: fixed;
@@ -100,7 +118,7 @@ nav .cta {
   cursor: pointer;
 }
 
-nav ul li{
+nav ul li {
   font-family: 'Raleway', sans-serif;
   display: inline;
   padding-left: 20px;
@@ -133,10 +151,7 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
 
 #header h4 {
   margin-bottom: 20px;
-}
-
-#header p{
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .title {
@@ -152,6 +167,14 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
 .byline {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.byline p {
+  line-height: 1.8;
+}
+
+.byline p a:hover {
+  color: #f99580;
 }
 
 /* EVENTS ============= */
@@ -187,6 +210,7 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
   letter-spacing: 2px;
   font-size: 0.9em;
   color: #fff;
+  padding-left: 10px;
 }
 
 .big {
@@ -219,8 +243,9 @@ nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
 .keywords {margin-bottom: 30px;}
 
 .keywords span {
-  background-color: #fff;
-  padding: 3px;
+  background-color: #cbf7dd;
+  border-radius: 3px;
+  padding: 5px;
   margin:3px;
   font-size: 0.8em;
 }
@@ -320,3 +345,21 @@ footer button {
 }
 
 /* MAILING LIST ============= */
+.btn {
+  vertical-align:inherit; 
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-content {
+    border: none;
+    border-radius: 3px;
+}
+
+.modal-title {
+  color: #ef7056;
+}
+
+.modal-body {
+  color: #4d4d4d;
+}

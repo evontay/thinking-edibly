@@ -26,7 +26,7 @@
       <a href="#approach"><li>Our Approach</li></a>
       <a href="#involve"><li>Get Involved</li></a>
       <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Newsletter</button>
+      <button type="button" class="btn newsletter" data-toggle="modal" data-target="#myModal">Mailing List</button>
     </ul>
   </nav>
 
@@ -37,8 +37,8 @@
         <h4 class="tagline red">Crafting a different food future!</h4>
       </div>
       <div class="byline col-md-4">
-        <h4>September -<br> November 2016</h4>
-        <p>A series of food discussions and events led and facilitated by <a href="http://foodscapecollective.org/" class="green">Foodscape Collective</a></p>
+        <h4 class="red">September -<br> November 2016</h4>
+        <p>A series of food discussions and events led and facilitated by <a href="http://foodscapecollective.org/" class="red">Foodscape Collective</a></p>
       </div>
     </div>
   </div>
@@ -252,21 +252,32 @@
 
 
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Subscribe to our newsletter</button>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Subscribe</button>
 
           <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-sm">
+            <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header</h4>
+                  <h4 class="modal-title">Sign Up For Our Mailing List</h4>
                 </div>
                 <div class="modal-body">
-                  <p>This is a small modal.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <p>The team behind Foodscape Collective loves seeing how urban growers are coming together to make Singapore an edible garden city, from our "unused" spaces, backyards and balconies. If you want to keep up with our latest happenings, please sign up here! We send out newsletters monthly or every other month.</p>
+
+                  <div class="subscribe wow fadeInUp">
+                    <form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="subscribe-email">Email address</label>
+                            <input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+
+                    <div class="success-message"></div>
+                    <div class="error-message"></div>
+                  </div>
+
                 </div>
               </div>
             </div>
