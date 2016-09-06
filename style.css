@@ -204,7 +204,7 @@ nav ul a:hover {
 
 /* EVENTS ============= */
 
-.event-menu {
+#event-menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -282,8 +282,8 @@ p.show-date {
   padding: 5px;
   margin: 0 auto;
   text-align: center;
-  left: 30%;
-  bottom: 20px;
+  left: 32%;
+  bottom: 30px;
 }
 
 
@@ -329,11 +329,6 @@ p.show-date {
 }
 
 
-.title-uline {
-  text-decoration: underline;
-  margin: 30px 0 15px 0;
-}
-
 .e-title {
   margin-bottom: 15px;
   font-weight: bold;
@@ -357,11 +352,10 @@ p.show-date {
 }
 
 
- img {
-  margin: 0 auto;
-  margin-bottom: 100px;
+ .spot-img {
+  margin: 100px auto;
   text-align: center;
-  left: 50%;
+  /*left: 50%;*/
 }
 
 .quote-hr {
@@ -384,6 +378,10 @@ p.show-date {
   /*background-color: #2898fb;*/
   padding: 100px;
   color: #f2f2f2;
+}
+
+#approach a {
+  padding: 20px;
 }
 
 
