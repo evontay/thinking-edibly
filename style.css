@@ -2,9 +2,9 @@
 
 * {
   box-sizing: border-box;
-  -webkit-transition: 0.2s ease-out;
+  /*-webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
+  transition: 0.2s ease-out;*/
 }
 
 /* BRAND COLORS ============= */
@@ -153,6 +153,7 @@ nav ul a:hover {
   margin-bottom: 20px;
   line-height: 1.2;
 }
+
 
 .title {
   font-size: 6em;
@@ -370,4 +371,24 @@ footer button {
 
 .modal-body {
   color: #4d4d4d;
+}
+
+@media (max-width: 768px) {
+  p {font-size: 1em;}
+  h1 {font-size: 3em !important;}
+  h3 {font-size: 1.5em;}
+  h4 {font-size: 1.3em !important;}
+  .row {padding: 15px;}
+  .title {font-size: 4em !important;}
+  .tagline {font-size: 1.3em !important;}
+  .byline {margin-top: 50px;}
+  .hero {
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    background-size: cover;
+  }
+  /*.row {margin: 15px;}*/
+  #events, #about, #approach, #involve {padding: 50px 15px;}
 }
