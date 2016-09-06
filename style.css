@@ -380,10 +380,20 @@ p.show-date {
   color: #f2f2f2;
 }
 
-#approach a {
-  padding: 20px;
+#approach a li {
+  padding: 10px 20px;
+  color: #f2f2f2;
+  background-color: #6586fa;
+  cursor: pointer;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  max-width: 600px;
 }
 
+#approach a li:hover {
+    background-color: #849df9;
+}
 
 /* INVOLVE ============= */
 #involve {
