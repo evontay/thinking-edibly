@@ -196,25 +196,30 @@ nav ul a:hover {
 .event-menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .showbox-1, .showbox-2, .showbox-3 {
   flex: 1;
-  background-color: #f2f2f2;
+  background-color: #c8f1d8;
   border-radius: 4px;
   height: 350px;
   max-width: 250px;
+  min-width: 250px;
   margin: 20px auto;
   padding: 20px 15px;
   cursor: pointer;
   text-align: center;
-}
-
-.showbox-1:hover, .showbox-2:hover, .showbox-3:hover {
-  box-shadow: 0px 5px 10px -2px #999;
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
+  position: relative;
+}
+
+.showbox-1:hover, .showbox-2:hover, .showbox-3:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 5px 10px -2px #999;
+
 }
 
 .desc {
@@ -239,10 +244,13 @@ p.show-date {
 .show-title {
   flex:4;
   margin:0;
-  padding: 0 15px;
+  padding: 20px 0px;
+  margin-bottom: 15px;
   font-size: 1.5em;
   line-height: 1.1;
   font-weight: bold;
+  color: #ef7056;
+  border-bottom: 1px dotted #ef7056;
 }
 
 .show-title span {
@@ -254,6 +262,15 @@ p.show-date {
 
 .show-cta {
   flex:1;
+  border: 1px solid #ef7056;
+  border-radius: 3px;
+  color: #ef7056;
+  position: absolute;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  left: 30%;
+  bottom: 20px;
 }
 
 
