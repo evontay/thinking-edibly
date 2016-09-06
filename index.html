@@ -46,54 +46,60 @@
 
   <div class="hero"></div>
 
-    <section id="events" data-color="#88e1ab">
-      <div class="container">
-        <h1 class="oleo light pad-top">Discussions &amp; Events</h1>
-        <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-8">
-            <p class="light pad-top pad-bottom">Each session of the Food Discussions revolves around a particular topic relating food to who we are. Our aim here is to briefly glance over the range of ways food, human identity, health and sense of place are related. Obviously, each topic includes many subtopics and it would be impossible to cover them in equal depth. What these sessions aim to do, though, is to identify areas that participants (you) think are important to be explored more fully, list them out, and use them to organise our 2nd round of our discussions (from February 2017).
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-          <!-- EVENT MENU ============ -->
-          <div class="col-md-4">
-            <div id="show-1">
-              <div class="show-left">
-                Session <span class="big">01</span>
-              </div>
-              <div class="show-right">
-                <h2>Food for All:<br> Health and Society</h2>
-                <h6 class="date">Event is over</h6>
-              </div>
-            </div>
-            <div id="show-2" class="active">
-              <div class="show-left">
-                Session <span class="big">02</span>
-              </div>
-              <div class="show-right">
-                <h2>Local Recipes<br> Local Tastes</h2>
-                <h6 class="date">17 Sep 2016</h6>
-              </div>
-            </div>
-            <div id="show-3">
-              <div class="show-left">
-                Session <span class="big">03</span>
-              </div>
-              <div class="show-right">
-                <h2>Eating Local</h2>
-                <h6 class="date">1 Oct 2016</h6>
-              </div>
-            </div>
-          </div>
-          <!-- END /EVENT MENU ============ -->
+  <section id="events" data-color="#88e1ab">
+    <div class="bigwrap">
+      <h1 class="oleo pad-top">Discussions &amp; Events</h1>
 
-          <!-- EVENT DETAILS =============== -->
-          <div class="col-md-8">
-            <div id="session1" class="hidden">
-              <h6 class="title-uline">Session 01</h6>
-              <h3 class="e-title">Food for All: Health and Society</h3>
+      <div class="desc">
+        <p>Each session of the Food Discussions revolves around a particular topic relating food to who we are. Our aim here is to briefly glance over the range of ways food, human identity, health and sense of place are related. Obviously, each topic includes many subtopics and it would be impossible to cover them in equal depth. What these sessions aim to do, though, is to identify areas that participants (you) think are important to be explored more fully, list them out, and use them to organise our 2nd round of our discussions (from February 2017).
+      </div>
+
+      <!-- EVENT MENU ============ -->
+      <div class="event-menu">
+        <div class="showbox-1" data-toggle="modal" data-target="#session1-modal">
+          <p class="show-date">Session 01</p>
+          <p class="show-title">Food for All: Health and Society</h2>
+          <ul>
+            <li class="e-details">Date: 3 September 2016</li>
+            <li class="e-details">Time: 4pm - 5.30pm</li>
+            <li class="e-details">Venue: HortPark, 33 Hyderabad Road</li>
+          </ul>
+          <p class="show-cta">Show more</p>
+        </div>
+
+        <div class="showbox-2" data-toggle="modal" data-target="#session2-modal">
+          <p class="show-date">Session 02</p>
+          <p class="show-title">Local Recipes, Local Tastes: Casting Glamour</h2>
+          <ul>
+            <li class="e-details">Date: 17 September 2016</li>
+            <li class="e-details">Time: 4pm - 5.30pm</li>
+            <li class="e-details">Venue: HortPark, 33 Hyderabad Road</li>
+          </ul>
+          <p class="show-cta">Show more</p>
+        </div>
+
+        <div class="showbox-3" data-toggle="modal" data-target="#session3-modal">
+          <p class="show-date">session1 03</p>
+          <p class="show-title">Eating Local</h2>
+          <ul>
+            <li class="e-details">Date: 1 October 2016</li>
+            <li class="e-details">Time: 4pm - 5.30pm</li>
+            <li class="e-details">Venue: HortPark, 33 Hyderabad Road</li>
+          </ul>
+          <p class="show-cta">Show more</p>
+        </div>
+      </div><!--event-menu-->
+
+      <!-- Modal Session 1 -->
+      <div class="modal fade" id="session1-modal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">╳</button>
+              <h6 class="title-uline">Session 01 </h6>
+              <h4 class="modal-title">Food for All: Health and Society</h4>
+            </div>
+            <div class="modal-body">
               <ul>
                 <li class="e-details">Date: 3 September 2016</li>
                 <li class="e-details">Time: 4pm - 5.30pm</li>
@@ -105,15 +111,22 @@
               <p class="keywords">Keywords: <span>health</span> <span>food justice</span> <span>food access</span> <span>affordability</span></p>
 
               <btn class="cta">Sign Up</btn>
-            </div><!-- #session1 -->
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- EVENT DETAILS =============== -->
-            <div id="session2" class="">
-              <h6 class="title-uline">Session 02</h6>
-              <h3 class="e-title">Local Recipes, Local Tastes: Casting Glamour</h3>
-
+      <!-- Modal Session 2 -->
+      <div class="modal fade" id="session2-modal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">╳</button>
+            <h4 class="modal-title">Session 02</h4>
+            </div>
+            <div class="modal-body">
               <ul>
-                <li class="e-details">Date: 17 September 2016</li>
+                <li class="e-details">Date: 3 September 2016</li>
                 <li class="e-details">Time: 4pm - 5.30pm</li>
                 <li class="e-details">Venue: <a href="http://nong.com.sg/pages/contact-us">HortPark, 33 Hyderabad Road</a></li>
               </ul>
@@ -129,44 +142,56 @@
               <p class="keywords">Keywords: <span>recipes</span> <span>traditions</span> <span>stories</span> <span>passing on the baton/kueh</span> <span>knowledge sharing</span></p>
 
               <btn class="cta">Sign Up</btn>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            </div><!-- #session2 -->
-
-            <div id="session3" class="hidden">
-              <h6 class="title-uline">Session 03</h6>
-              <h3 class="e-title">Eating Local</h3>
-
+      <!-- Modal Session 3-->
+      <div class="modal fade" id="session3-modal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">╳</button>
+              <h6 class="title-uline">Session 03 </h6>
+              <h4 class="modal-title">Eating Local</h4>
+            </div>
+            <div class="modal-body">
               <ul>
                 <li class="e-details">Date: 1 October 2016</li>
                 <li class="e-details">Time: 4pm - 5.30pm</li>
                 <li class="e-details">Venue: <a href="http://nong.com.sg/pages/contact-us">HortPark, 33 Hyderabad Road</a></li>
               </ul>
-
               <p>We look at commercial and community-based food production to see what the future of eating local could be. Where would you go in Singapore to find the freshest food, grown locally? Has it become easier to find locally grown produces in recent years? What problems do local farmers face in commercial food production? Could we produce food for ourselves, to be shared with others in farms AND gardens?
 
               <p class="keywords">Keywords: <span>local food production</span> <span>farming</span> <span>gardens</span> <span>community-based</span> <span>growing</span> <span>food sovereignty</span> <span>land tenure</span></p>
 
               <btn class="cta">Sign Up</btn>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            </div><!-- #session3 -->
-        </div><!-- col-md-8 -->
-      </div><!-- row -->
-    </div><!-- #events -->
+    </div><!-- bigwrap -->
+  </div><!-- #events -->
   </section>
 
     <section id="about" data-color="#f2d631">
-      <div class="container">
+      <div class="bigwrap">
         <h1 class="oleo">Why Discuss Food?</h1>
-        <div class="row">
-          <div class="col-md-8">
-            <p>Interest in farming is opening up. We urgently need to craft a community that understands the meaning of farming and nature, on a deeper level. We need to show that our vision of people farming sustainably for their community is possible.
 
-            <p>There is some urgency here, a real need. Future land use and policy plans for urban planning are being made. By beginning our own process of fleshing out what we hope to see in the food system, we create the opportunity for a collective Food Vision to emerge.
-          </div>
-          <div class="col-md-4 pullquote1">
-            "What could our local food system look like?"
-          </div>
+        <div class="desc">
+          <p>Interest in farming is opening up. We urgently need to craft a community that understands the meaning of farming and nature, on a deeper level. We need to show that our vision of people farming sustainably for their community is possible.
+
+          <p>There is some urgency here, a real need. Future land use and policy plans for urban planning are being made. By beginning our own process of fleshing out what we hope to see in the food system, we create the opportunity for a collective Food Vision to emerge.
         </div>
+
+        <div class="pullquote1">
+          "What could our local food system look like?"
+        </div>
+
+        <img src="img/local-food-system.png">
+
 
         <h1 class="oleo pad-top">Our End Goal</h1>
         <div class="row">
@@ -200,9 +225,9 @@
     <section id="approach" data-color="#2898fb">
       <div class="container">
         <h1 class="oleo pad-bottom">Our Approach</h1>
-        <h6>In kickstarting this conversation, Foodscape Collective’s role is to facilitate the process and communicate the message shared by each voice in the process.</h6>
+        <div class="pullquote1">In kickstarting this conversation, Foodscape Collective’s role is to facilitate the process and communicate the message shared by each voice in the process.</div>
 
-        <p>We work iteratively, starting small, adding time for reflection, and integrating modifications to each subsequent round. Thinking Edibly begins with 3 sessions of open food discussions on topical issues in food, interspersed with workshops, garden visits, farmers markets and installations. In November to December, it transitions into a free school for food, where we work with participants to create, from scratch, two months of ‘classes’, contributed by anyone, attended by anyone. Finally, in January we begin planning again for the 2nd round of food discussions, beginning in February.
+        <p class="desc">We work iteratively, starting small, adding time for reflection, and integrating modifications to each subsequent round. Thinking Edibly begins with 3 sessions of open food discussions on topical issues in food, interspersed with workshops, garden visits, farmers markets and installations. In November to December, it transitions into a free school for food, where we work with participants to create, from scratch, two months of ‘classes’, contributed by anyone, attended by anyone. Finally, in January we begin planning again for the 2nd round of food discussions, beginning in February.
 
 
         <ul>
@@ -254,9 +279,10 @@
           <h2 class="oleo">Thinking Edibly</h2>
           <p>A series of food discussions and events led and facilitated by <a href="http://foodscapecollective.org/" class="green">Foodscape Collective</a></p>
 
+          <a href="http://eepurl.com/b1txhr"><button class="btn btn-info">Subscribe</button><a>
 
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Subscribe</button>
+          <!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Subscribe</button> -->
 
           <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">

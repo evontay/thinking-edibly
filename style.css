@@ -58,9 +58,10 @@ section {
   display: none;
 }
 
+
 /* TYPOGRAPHY ============= */
-.leck {font-family: 'Leckerli One', cursive;}
-.oleo {font-family: 'Oleo Script Swash Caps', cursive;}
+.leck {font-family: 'Leckerli One', sans-serif;}
+.oleo {font-family: 'Oleo Script Swash Caps', sans-serif;}
 .raleway {font-family: 'Raleway', sans-serif;}
 
 h1 {font-size: 4em;}
@@ -186,68 +187,77 @@ nav ul a:hover {
   background-position: right;
 }
 
-/* EVENTS ============= */
-#events {
-  /*background-color: #88e1ab;*/
+#events, #about, #approach, #involve {
   padding: 50px;
 }
 
-#show-1, #show-2, #show-3 {
-  padding: 15px 15px 15px 0;
-  margin: 20px 0;
+/* EVENTS ============= */
+
+.event-menu {
   display: flex;
   flex-direction: row;
-  border-left: 4px solid #84f7b2;
-  /*color: #fff;*/
+}
+
+.showbox-1, .showbox-2, .showbox-3 {
+  flex: 1;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  height: 350px;
+  max-width: 250px;
+  margin: 20px auto;
+  padding: 20px 15px;
   cursor: pointer;
+  text-align: center;
 }
 
-#show-1:hover, #show-1:active, #show-2:hover, #show-2:active, #show-3:hover, #show-2:active{
-  background-color: #84f7b2;
-  color: #4d4d4d !important;
+.showbox-1:hover, .showbox-2:hover, .showbox-3:hover {
+  box-shadow: 0px 5px 10px -2px #999;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
-.active {
-  background-color: #84f7b2;
-  color: #4d4d4d;
+.desc {
+  max-width: 600px;
+  padding: 100px 0;
+  margin-left: 30%;
 }
 
-.show-left {
+
+p.show-date {
   flex: 1;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.9em;
-  color: #fff;
+  color: #4d4d4d;
   padding-left: 10px;
+  line-height:0.8;
+  margin: 0;
 }
 
-.big {
-  font-size: 5em;
-  font-weight: bold;
-}
-
-.show-right {
-  flex:2;
-  padding-left: 15px;
-}
-
-.show-right h2 {
-  font-size: 1.2em;
+.show-title {
+  flex:4;
+  margin:0;
+  padding: 0 15px;
+  font-size: 1.5em;
   line-height: 1.1;
   font-weight: bold;
-  text-transform: uppercase;
-  /*letter-spacing: 1px;*/
 }
 
-.date {
-  border-top: 1px solid #cbf7dd;
-  padding-top: 10px;
-  margin-top: 10px;
+.show-title span {
+  font-weight: normal;
+  font-size: 0.8em;
+  /*letter-spacing: 2px;*/
+  text-decoration: underline;
 }
-.event-menu {
-  padding: 20px;
+
+.show-cta {
+  flex:1;
 }
+
+
+
 
 .keywords {margin-bottom: 30px;}
 
@@ -256,7 +266,7 @@ nav ul a:hover {
   border-radius: 3px;
   padding: 5px;
   margin:3px;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .cta {
@@ -272,11 +282,22 @@ nav ul a:hover {
 
 .cta:hover {background-color:#5d5d5d;}
 
-#session1 {display: block;}
+#session1, #session2, #session3 {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 30px 50px 50px 50px;
+  position: relative;
+}
 
-#session2 {display: block;}
+#session1 .exit, #session2 .exit, #session3 .exit {
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  position: absolute;
+  /*text-align: right;*/
+  cursor: pointer;
+}
 
-#session3 {display: block;}
 
 .title-uline {
   text-decoration: underline;
@@ -303,8 +324,14 @@ nav ul a:hover {
 
 /* ABOUT ============= */
 #about {
-  /*background-color: #f2d631;*/
   padding: 100px;
+}
+
+
+#about img {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 100px;
 }
 
 .pullquote1 {
@@ -313,6 +340,7 @@ nav ul a:hover {
   font-size: 2.5em;
   line-height: 1.5 !important;
   padding: 30px;
+  max-width: 60%
 }
 
 /* APPROACH ============= */
