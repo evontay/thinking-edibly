@@ -58,6 +58,9 @@ section {
   display: none;
 }
 
+.center-text {
+  text-align: center;
+}
 
 /* TYPOGRAPHY ============= */
 .leck {font-family: 'Leckerli One', sans-serif;}
@@ -69,7 +72,10 @@ h2 {font-size: 2.5em;}
 h3 {font-size: 2em;}
 h4 {font-size: 1.8em;}
 h5 {font-size: 1.6em;}
-h6 {font-size: 1.3em;}
+h6 {
+  font-size: 1.3em;
+  line-height: 1.5;
+}
 p {
   font-size: 1.1em;
   margin: 15px 0;
@@ -108,6 +114,11 @@ nav {
   z-index: 99;
   text-align: right;
   padding: 15px;
+}
+
+nav h6 {
+  text-align: left;
+  position: absolute;
 }
 
 nav .cta {
@@ -201,11 +212,11 @@ nav ul a:hover {
 
 .showbox-1, .showbox-2, .showbox-3 {
   flex: 1;
-  background-color: #c8f1d8;
+  background-color: #f2f2f2;
   border-radius: 4px;
   height: 350px;
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 300px;
+  min-width: 300px;
   margin: 20px auto;
   padding: 20px 15px;
   cursor: pointer;
@@ -214,18 +225,20 @@ nav ul a:hover {
   -moz-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   position: relative;
+  box-shadow: 5px 5px 10px -5px #58a376;
 }
 
 .showbox-1:hover, .showbox-2:hover, .showbox-3:hover {
-  background-color: #f2f2f2;
-  box-shadow: 0px 5px 10px -2px #999;
+  background-color: #fff;
+  box-shadow: 5px 15px 15px -5px #58a376;
 
 }
 
 .desc {
   max-width: 600px;
-  padding: 100px 0;
-  margin-left: 30%;
+  padding: 50px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -338,26 +351,32 @@ p.show-date {
 }
 
 
-
 /* ABOUT ============= */
 #about {
   padding: 100px;
 }
 
 
-#about img {
+ img {
   margin: 0 auto;
+  margin-bottom: 100px;
   text-align: center;
-  padding-left: 100px;
+  left: 50%;
 }
 
+.quote-hr {
+  border-top: 4px solid #4d4d4d;
+  max-width: 200px;
+  height: 20px;
+  margin: 50px auto 30px auto;
+}
 .pullquote1 {
-  border-left: 4px solid #4d4d4d;
   font-style: italic;
   font-size: 2.5em;
-  line-height: 1.5 !important;
-  padding: 30px;
-  max-width: 60%
+  line-height: 1.1 !important;
+  padding-left: 30px;
+  margin:  20px auto;
+  text-align: center;
 }
 
 /* APPROACH ============= */
@@ -366,6 +385,7 @@ p.show-date {
   padding: 100px;
   color: #f2f2f2;
 }
+
 
 /* INVOLVE ============= */
 #involve {
@@ -398,6 +418,21 @@ footer button {
   margin-top: 30px;
 }
 
+.btn-info {
+  color: #4d4d4d;
+  background-color: #88e1ab;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.btn-info:hover {
+    color: #4d4d4d;
+    background-color: #f2f2f2;
+}
 /* MAILING LIST ============= */
 .btn {
   vertical-align:inherit;
@@ -408,6 +443,7 @@ footer button {
 .modal-content {
     border: none;
     border-radius: 3px;
+    padding: 30px;
 }
 
 .modal-title {
