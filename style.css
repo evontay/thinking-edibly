@@ -67,7 +67,10 @@ section {
 .oleo {font-family: 'Oleo Script Swash Caps', sans-serif;}
 .raleway {font-family: 'Raleway', sans-serif;}
 
-h1 {font-size: 4em;}
+h1 {
+  font-size: 4em;
+  margin-left: 100px;
+ }
 h2 {font-size: 2.5em;}
 h3 {font-size: 2em;}
 h4 {font-size: 1.8em;}
@@ -83,6 +86,13 @@ p {
 }
 
 li {line-height: 1.8;}
+
+.subtext {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 1.1em;
+}
 
 a, a:hover, a:visited, a:active {text-decoration: none;}
 
@@ -158,28 +168,35 @@ nav ul a:hover {
 #header {
   margin-top: 50px;
   margin-bottom: 50px;
-  /*height: 100vh;*/
 }
 
 #header h4 {
   margin-bottom: 20px;
   line-height: 1.2;
 }
-
-
+.landing {
+  display: flex;
+  flex-direction: row;
+}
+.masthead {
+  padding-left: 50px;
+  flex: 3;
+}
 .title {
   font-size: 6em;
   font-family: 'Oleo Script Swash Caps', cursive;
   color: #ef7056;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin: 100px 0 20px 0;
+
 }
 .tagline {
   margin-bottom: 50px;
 }
+
 .byline {
   margin-top: 100px;
   margin-bottom: 20px;
+  flex: 2;
 }
 
 .byline p {
@@ -198,7 +215,7 @@ nav ul a:hover {
   background-position: right;
 }
 
-#events, #about, #approach, #involve {
+#header, #events, #about, #approach, #involve {
   padding: 50px;
 }
 
@@ -232,13 +249,6 @@ nav ul a:hover {
   background-color: #fff;
   box-shadow: 5px 15px 15px -5px #58a376;
 
-}
-
-.desc {
-  max-width: 600px;
-  padding: 50px 0;
-  margin: 0 auto;
-  text-align: center;
 }
 
 
@@ -409,6 +419,18 @@ p.show-date {
   text-align: left;
   padding: 100px;
   color: #ef7056;
+}
+
+.helpers {
+  display: flex;
+  flex-direction: row;
+}
+
+.role {
+  flex: 1;
+  margin: 50px 20px 50px 0;
+  padding: 0 20px;
+  border-left: 2px solid #ef7056;
 }
 
 /* FOOTER ============= */
