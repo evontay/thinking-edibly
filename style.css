@@ -372,20 +372,22 @@ p.show-date {
   border-top: 4px solid #4d4d4d;
   max-width: 200px;
   height: 20px;
-  margin: 50px auto 30px auto;
+  margin-left: 100px;
 }
 .pullquote1 {
   font-style: italic;
   font-size: 2.5em;
   line-height: 1.1 !important;
-  padding-left: 30px;
-  margin:  20px auto;
-  text-align: center;
+  padding: 0 20px;
+  margin:  20px 100px 100px 50px;
+  /*margin-left: 100px;*/
+  border-left: 2px solid #4d4d4d;
+  max-width: 60%;
 }
 
 /* APPROACH ============= */
 #approach {
-  padding: 100px;
+  padding: 100px 100px 0 100px;
 }
 
 #approach a li {
@@ -418,7 +420,7 @@ p.show-date {
   /*background-color: #ef7056;*/
   text-align: left;
   padding: 100px;
-  color: #ef7056;
+  color: #4d4d4d;
 }
 
 .helpers {
@@ -433,10 +435,16 @@ p.show-date {
   border-left: 2px solid #ef7056;
 }
 
+.role h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+}
 /* FOOTER ============= */
 footer {
   background-color: #4d4d4d;
-  padding: 100px 0;
+  padding: 0 100px;
   color: #f2f2f2
 }
 
@@ -446,7 +454,7 @@ footer h3 {
 
 footer ul a {
   line-height: 2;
-  color: #88e1ab;
+  color: #ef7056;
 }
 
 footer a:hover{
@@ -459,7 +467,7 @@ footer button {
 
 .btn-info {
   color: #4d4d4d;
-  background-color: #88e1ab;
+  background-color: #f2f2f2;
   border: none;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -470,7 +478,7 @@ footer button {
 
 .btn-info:hover {
     color: #4d4d4d;
-    background-color: #f2f2f2;
+    background-color: #ef7056;
 }
 /* MAILING LIST ============= */
 .btn {
