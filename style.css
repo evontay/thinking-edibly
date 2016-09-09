@@ -90,6 +90,40 @@ li {line-height: 1.8;}
 
 a, a:hover, a:visited, a:active {text-decoration: none;}
 
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+nav a {
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+button.btn.newsletter {margin-top: 10px;}
+
+.navbar-brand {
+  color: #ef7056 !important;
+  font-family: 'Oleo Script Swash Caps', sans-serif;
+}
+
+.navbar-brand:hover {color: #f9856d !important;}
+
+.navbar-default .navbar-nav>li>a{
+    color: #ef7056;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f9856d;
+}
+
+
 
 /* HEADER ============= */
 .newsletter {
@@ -118,6 +152,7 @@ a, a:hover, a:visited, a:active {text-decoration: none;}
   z-index: 99;
   text-align: right;
   padding: 15px;
+  display: none;
 }
 
 .desktop-nav h6 {
@@ -227,7 +262,7 @@ a, a:hover, a:visited, a:active {text-decoration: none;}
   border-radius: 4px;
   height: 350px;
   max-width: 300px;
-  min-width: 300px;
+  min-width: 250px;
   margin: 20px auto;
   padding: 20px 15px;
   cursor: pointer;
@@ -406,7 +441,7 @@ p.show-date {
 }
 
 #approach a li:hover {
-    background-color: #f6cbda;
+    background-color: #f6ddca;
 }
 
 .para {
@@ -602,5 +637,8 @@ a.footer-link:hover {
   footer {padding: 50px 20px;}
 
   .footer-img {display: none;}
-
+  .newsletter {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
 }
