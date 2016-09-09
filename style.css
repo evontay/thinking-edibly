@@ -88,6 +88,8 @@ li {line-height: 1.8;}
   font-size: 1.1em;
 }
 
+.strong {font-weight: 800;}
+
 a, a:hover, a:visited, a:active {text-decoration: none;}
 
 nav {
@@ -143,55 +145,8 @@ button.btn.newsletter {margin-top: 10px;}
   color: #f2f2f2;
 }
 
-.desktop-nav {
-  position: fixed;
-  top: 0;
-  background-color: #f2f2f2;
-  /*border-bottom: 2px solid #ef7056;*/
-  width: 100%;
-  z-index: 99;
-  text-align: right;
-  padding: 15px;
-  display: none;
-}
 
-.desktop-nav h6 {
-  text-align: left;
-  position: absolute;
-}
 
-.desktop-nav .cta {
-  background-color:#4d4d4d;
-  padding: 10px 15px;;
-  color: #f2f2f2;
-  border-radius: 3px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.desktop-nav ul li {
-  font-family: 'Raleway', sans-serif;
-  display: inline;
-  padding-left: 20px;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.desktop-nav ul a {
-  text-decoration: none;
-  color: #ef7056;
-}
-
-.desktop-nav ul a:hover {
-  text-decoration: none;
-  color: #f9856d;
-}
-
-/*nav a btn, nav a btn:hover, nav a btn:visited, nav a btn:active {
-  text-decoration: none;
-  color: #f2f2f2;
-}*/
 
 
 #header {
@@ -380,6 +335,10 @@ p.show-date {
   font-weight: bold;
 }
 
+.e-details a{
+  color:#78d79d;
+}
+
 #events ul {
   margin-bottom: 20px;
 }
@@ -393,6 +352,7 @@ p.show-date {
 
  .spot-img {
   margin: 100px auto;
+  margin-bottom: 30px;
   text-align: center;
   max-width: 800px;
   /*left: 50%;*/
@@ -413,10 +373,10 @@ p.show-date {
   font-size: 2.5em;
   line-height: 1.1;
   padding: 0 20px;
-  margin:  20px 100px 100px 50px;
+  margin:  20px 50px 100px 50px;
   /*margin-left: 100px;*/
   border-left: 2px solid #4d4d4d;
-  max-width: 60%;
+  max-width: 80%;
 }
 
 /* APPROACH ============= */
@@ -453,7 +413,7 @@ p.show-date {
 #involve {
   /*background-color: #ef7056;*/
   text-align: left;
-  padding: 50px 100px;
+  padding: 0px 100px 50px 100px;
   color: #4d4d4d;
 }
 
@@ -547,7 +507,14 @@ footer button {
 }
 
 .modal-title {
-  color: #ef7056;
+  color: #78d79d;
+  font-weight: 800;
+}
+
+.title-uline {
+  font-size: 0.8em;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .modal-body {
