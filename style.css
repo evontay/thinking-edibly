@@ -52,6 +52,7 @@ section {
 .bigwrap {
   padding: 30px;
   transition: 0.3s ease-out;
+  width: 100%;
 }
 
 .hidden {
@@ -365,7 +366,12 @@ p.show-date {
  .spot-img {
   margin: 100px auto;
   text-align: center;
+  max-width: 800px;
   /*left: 50%;*/
+}
+
+.spot-img img {
+  width: 90%;
 }
 
 .quote-hr {
@@ -377,7 +383,7 @@ p.show-date {
 .pullquote1 {
   font-style: italic;
   font-size: 2.5em;
-  line-height: 1.1 !important;
+  line-height: 1.1;
   padding: 0 20px;
   margin:  20px 100px 100px 50px;
   /*margin-left: 100px;*/
@@ -444,7 +450,7 @@ p.show-date {
 /* FOOTER ============= */
 footer {
   background-color: #4d4d4d;
-  padding: 0 100px;
+  padding: 100px;
   color: #f2f2f2
 }
 
@@ -501,13 +507,29 @@ footer button {
   color: #4d4d4d;
 }
 
+.credits {
+  font-size: 0.8em;
+  color: #999;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 30px;
+}
+
 @media (max-width: 768px) {
-  p {font-size: 1em;}
-  h1 {font-size: 3em !important;}
+  p, ul {font-size: 0.8em;}
+  h1 {
+    font-size: 3em !important;
+    margin-left: 10%;
+  }
+
+  h2 { font-size: 1.8em;}
   h3 {font-size: 1.5em;}
   h4 {font-size: 1.3em !important;}
   .row {padding: 15px;}
-  .title {font-size: 4em !important;}
+  .title {
+    font-size: 4em !important;
+    margin-top: 30px;
+  }
   .tagline {font-size: 1.3em !important;}
   .byline {margin-top: 50px;}
   .hero {
@@ -516,7 +538,44 @@ footer button {
     -o-background-size: auto 100%;
     background-size: auto 100%;
     background-size: cover;
+    height: 120px;
   }
-  /*.row {margin: 15px;}*/
-  #events, #about, #approach, #involve {padding: 50px 15px;}
+  #header, #events, #about, #approach, #involve {
+    padding: 0px !important;
+    margin-bottom: 0;
+  }
+
+
+  .masthead {
+    padding: 0;
+  }
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subtext {
+    font-size: 0.8em;
+  }
+
+  .pullquote1 {
+    font-size: 1.1em;
+    margin: 0;
+    margin-left: 15px;
+    max-width: 90%;
+    line-height: 1.3;
+  }
+
+  .para {margin-bottom: 20px;}
+
+  .spot-img {margin: 30px 0;}
+
+  .helpers {
+    flex-direction: column;
+  }
+
+  footer {padding: 50px 20px;}
+
+
 }
