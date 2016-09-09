@@ -2,9 +2,6 @@
 
 * {
   box-sizing: border-box;
-  /*-webkit-transition: 0.2s ease-out;
-  -moz-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;*/
 }
 
 /* BRAND COLORS ============= */
@@ -20,11 +17,11 @@
 /* LAYOUT ============= */
 body {
   background-color: #f2f2f2;
-  -webkit-transition: background-color 700ms linear;
-  -moz-transition: background-color 700ms linear;
-  -o-transition: background-color 700ms linear;
-  -ms-transition: background-color 700ms linear;
-  transition: background-color 700ms linear;
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
   will-change: background;
   color: #4d4d4d;
   font-family: 'Raleway', sans-serif;
@@ -37,17 +34,11 @@ section {
   /*height: 100vh;*/
 }
 
-.pad-bottom {
-  padding-bottom: 50px;
-}
+.pad-bottom {padding-bottom: 50px;}
 
-.pad-top {
-  padding-top: 50px;
-}
+.pad-top {padding-top: 50px;}
 
-.pad {
-  padding: 50px 0;
-}
+.pad {padding: 50px 0;}
 
 .bigwrap {
   padding: 30px;
@@ -88,6 +79,8 @@ p {
 
 li {line-height: 1.8;}
 
+.underline {text-decoration: underline;}
+
 .subtext {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -116,7 +109,7 @@ a, a:hover, a:visited, a:active {text-decoration: none;}
   color: #f2f2f2;
 }
 
-nav {
+.desktop-nav {
   position: fixed;
   top: 0;
   background-color: #f2f2f2;
@@ -127,12 +120,12 @@ nav {
   padding: 15px;
 }
 
-nav h6 {
+.desktop-nav h6 {
   text-align: left;
   position: absolute;
 }
 
-nav .cta {
+.desktop-nav .cta {
   background-color:#4d4d4d;
   padding: 10px 15px;;
   color: #f2f2f2;
@@ -141,7 +134,7 @@ nav .cta {
   cursor: pointer;
 }
 
-nav ul li {
+.desktop-nav ul li {
   font-family: 'Raleway', sans-serif;
   display: inline;
   padding-left: 20px;
@@ -150,12 +143,12 @@ nav ul li {
   letter-spacing: 1px;
 }
 
-nav ul a {
+.desktop-nav ul a {
   text-decoration: none;
   color: #ef7056;
 }
 
-nav ul a:hover {
+.desktop-nav ul a:hover {
   text-decoration: none;
   color: #f9856d;
 }
@@ -393,7 +386,7 @@ p.show-date {
 
 /* APPROACH ============= */
 #approach {
-  padding: 100px 100px 0 100px;
+  padding: 50px 100px 0 100px;
 }
 
 #approach a li {
@@ -425,7 +418,7 @@ p.show-date {
 #involve {
   /*background-color: #ef7056;*/
   text-align: left;
-  padding: 100px;
+  padding: 50px 100px;
   color: #4d4d4d;
 }
 
@@ -454,13 +447,26 @@ footer {
   color: #f2f2f2
 }
 
+footer h1 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
 footer h3 {
-  font-weight: lighter;
+  font-size:3em;
+}
+
+footer .tagline {
+  font-size: 0.8em;
+  color: #ef7056;
 }
 
 footer ul a {
   line-height: 2;
   color: #ef7056;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 footer a:hover{
@@ -469,6 +475,12 @@ footer a:hover{
 
 footer button {
   margin-top: 30px;
+}
+
+.footer-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .btn-info {
@@ -515,7 +527,19 @@ footer button {
   bottom: 30px;
 }
 
+a.footer-link {
+  text-decoration: underline;
+  color: #f2f2f2;
+}
+
+a.footer-link:hover {
+  text-decoration: underline;
+  color: #ef7056;
+}
+
 @media (max-width: 768px) {
+  .mobile-nav {display: block;}
+  .desktop-nav {display: none;}
   p, ul {font-size: 0.8em;}
   h1 {
     font-size: 3em !important;
@@ -577,5 +601,6 @@ footer button {
 
   footer {padding: 50px 20px;}
 
+  .footer-img {display: none;}
 
 }

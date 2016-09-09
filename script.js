@@ -43,20 +43,6 @@ $(document).ready(function () {
   })
 })
 
-// // For elements floating into place on scroll
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     var wScroll = $(this).scrollTop()
-//
-//     if (wScroll > $('#events').offset().top - $(window).height()) {
-//       var offset = Math.min(0, wScroll - $('#events').offset().top + $(window).height() - 0)
-//       $('body').addClass('green')
-//     } else {
-//       $('body').removeClass('green')
-//     }
-//   })
-// })
-
 $(window).on('scroll touchmove', function () {
   console.log('whodis')
   if ($(document).scrollTop() >= $('#header').position().top) {
